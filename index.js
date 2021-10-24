@@ -1,3 +1,4 @@
+// @ts-check
 const foo = 'bar';
 
 function bar(bazz) {
