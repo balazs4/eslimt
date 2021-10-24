@@ -18,10 +18,13 @@
   "prettier": {
     "singleQuote": true
   },
-  "eslint":{
-    "env": "node",
+  "eslintConfig":{
+    "env": {
+      "node": true,
+      "es2021": true
+    },
     "rules": {
-      "no-unsed-vars": "error",
+      "no-unused-vars": "error",
       "no-undef": "error"
     }
   }
