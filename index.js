@@ -1,5 +1,3 @@
-const foo = 'bar';
-
 /**
  * @param {string} bazz
  * @returns {boolean}
