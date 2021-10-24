@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "npx prettier --write ./**/*.js",
+    "postfmt": "npx eslint --no-eslintrc --env node --rule '{\"no-unused-vars\": \"error\", \"no-undef\": \"error\"}' --fix ./**/*.js"
   },
   "keywords": [],
   "author": "",
