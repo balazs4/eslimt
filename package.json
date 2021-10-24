@@ -6,12 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "npx prettier --write ./**/*.js",
-    "postfmt": "npx eslint --no-eslintrc --env node --rule '{\"no-unused-vars\": \"error\", \"no-undef\": \"error\"}' --fix ./**/*.js"
+    "lint": "npx eslint --fix ./**/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "8.1.0"
+    "eslint": "8.1.0",
+    "prettier": "2.4.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "eslint":{
+    "env": "node",
+    "rules": {
+      "no-unsed-vars": "error",
+      "no-undef": "error"
+    }
   }
 }
