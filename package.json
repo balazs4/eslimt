@@ -5,30 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prelint": "npx tsc --noEmit true --allowJs --checkJs ./*.js",
-    "lint": "npx eslint ./**/*.js",
-    "postlint": "npx prettier --write ./**/*.js"
+    "precheck": "npx prettier --write ./**/*.js",
+    "check": "npx tsc --noEmit true --allowJs --checkJs ./*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "16.11.4",
-    "eslint": "8.1.0",
     "prettier": "2.4.1",
     "typescript": "4.4.4"
   },
   "prettier": {
     "singleQuote": true
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true,
-      "es2021": true
-    },
-    "rules": {
-      "no-unused-vars": "error",
-      "no-undef": "error"
-    }
   }
 }
