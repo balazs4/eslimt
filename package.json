@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precheck": "npx prettier --write ./**/*.js",
-    "check": "npx tsc --noEmit true --allowJs --checkJs ./*.js"
+    "prelint": "npx prettier --write ./**/*.js",
+    "lint": "npx tsc --noEmit true --allowJs --checkJs ./*.js"
   },
   "keywords": [],
   "author": "",
